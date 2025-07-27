@@ -69,6 +69,7 @@ class TestCalculadora(unittest.TestCase):
         # Teste números de virgula flutuante - fazer três testes para todas as versões
         self.assertAlmostEqual(calculadora(2.5, 1.5, '+'), 4.0)
         self.assertAlmostEqual(calculadora(4.5, 1.5, '-'), 3.0)
+        self.assertAlmostEqual(calculadora(5.4, 1.5, '*'), 8.25)
         self.assertAlmostEqual(calculadora(5.5, 1.5, '*'), 8.25)
         self.assertAlmostEqual(calculadora_v2(2.5, 1.5, '+'), 4.0)
         self.assertAlmostEqual(calculadora_v2(4.5, 1.5, '-'), 3.0)
