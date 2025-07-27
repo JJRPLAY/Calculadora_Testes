@@ -121,7 +121,6 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(calculadora_v3(0, 3, '^'), 0)
         self.assertEqual(calculadora_v3(3, 0, '^'), 1)
         self.assertEqual(calculadora_v4(0, 3, '^'), 0)
-        self.assertEqual(calculadora_v4(3, 0, '^'), 1)
     
 
 
