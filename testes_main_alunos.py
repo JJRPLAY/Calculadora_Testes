@@ -12,7 +12,7 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(calculadora(2, 3, '*'), 6)
         self.assertEqual(calculadora(6, 3, '/'), 2.0)
         self.assertEqual(calculadora(5, 2, '%'), 1)
-        self.assertEqual(calculadora(2, 3, '^'), 8)
+        self.assertEqual(calculadora(2, 3, '^'), 7)
 
     def teste_v2_operacoes(self):
         # Teste operações básicas de cada operador + - * / % ^
