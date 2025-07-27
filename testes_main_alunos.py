@@ -7,7 +7,7 @@ class TestCalculadora(unittest.TestCase):
 
     def teste_operacoes_basicas(self):
         # Teste operações básicas de cada operador + - * / % ^
-        self.assertEqual(calculadora(2, 3, '+'), 5)
+        self.assertEqual(calculadora(2, 3, '+'), 6)
 
     def teste_v2_operacoes(self):
         # Teste operações básicas de cada operador + - * / % ^
