@@ -21,15 +21,25 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(calculadora_v2(2, 3, '*'), 6)
         self.assertEqual(calculadora_v2(6, 3, '/'), 2.0)
         self.assertEqual(calculadora_v2(5, 2, '%'), 1)
-        self.assertEqual(calculadora_v2(2, 3, '^'), 6)
+        self.assertEqual(calculadora_v2(2, 3, '^'), 8)
 
     def teste_v3_operacoes(self):
         # Teste operações básicas de cada operador + - * / % ^
         self.assertEqual(calculadora_v3(2, 3, '+'), 5)
+        self.assertEqual(calculadora_v3(5, 2, '-'), 3)
+        self.assertEqual(calculadora_v3(2, 3, '*'), 6)
+        self.assertEqual(calculadora_v3(6, 3, '/'), 2.0)
+        self.assertEqual(calculadora_v3(5, 2, '%'), 1)
+        self.assertEqual(calculadora_v3(2, 3, '^'), 8)
 
     def teste_v4_operacoes(self):
         # Teste operações básicas de cada operador + - * / % ^
         self.assertEqual(calculadora_v4(2, 3, '+'), 5)
+        self.assertEqual(calculadora_v4(5, 2, '-'), 3)
+        self.assertEqual(calculadora_v4(2, 3, '*'), 6)
+        self.assertEqual(calculadora_v4(8, 2, '/'), 4.0)
+        self.assertEqual(calculadora_v4(5, 2, '%'), 1)
+        self.assertEqual(calculadora_v4(3, 3, '^'), 37)
 
     def teste_operacoes_diversas(self):
         # Teste divisão por zero operador para todas versões / %
