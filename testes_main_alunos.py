@@ -69,7 +69,6 @@ class TestCalculadora(unittest.TestCase):
         # Teste números de virgula flutuante - fazer três testes para todas as versões
         self.assertAlmostEqual(calculadora(2.5, 1.5, '+'), 4.0)
         self.assertAlmostEqual(calculadora(4.5, 1.5, '-'), 3.0)
-        self.assertAlmostEqual(calculadora(5.4, 1.5, '*'), 8.25)
         self.assertAlmostEqual(calculadora(5.5, 1.5, '*'), 8.25)
         self.assertAlmostEqual(calculadora_v2(2.5, 1.5, '+'), 4.0)
         self.assertAlmostEqual(calculadora_v2(4.5, 1.5, '-'), 3.0)
@@ -83,6 +82,17 @@ class TestCalculadora(unittest.TestCase):
 
         # Teste números negativos - fazer 3 testes para todas as versões
         self.assertEqual(calculadora(-2, 3, '*'), -6)
+        self.assertEqual(calculadora(2, -3, '*'), -6)
+        self.assertEqual(calculadora(-3, -3, '*'), 9)
+        self.assertEqual(calculadora_v2(-2, 3, '*'), -6.0)
+        self.assertEqual(calculadora_v2(2, -3, '*'), -6.0)
+        self.assertEqual(calculadora_v2(-3, -3, '*'), 9)
+        self.assertEqual(calculadora_v3(-2, 3, '*'), -6.0)
+        self.assertEqual(calculadora_v3(2, -3, '*'), -6.0)
+        self.assertEqual(calculadora_v3(-3, -3, '*'), 9)
+        self.assertEqual(calculadora_v4(-2, 3, '*'), -6.0)
+        self.assertEqual(calculadora_v4(2, -3, '*'), -6.0)
+        self.assertEqual(calculadora_v4(-3, -3, '*'), -9)
 
         # Teste números negativos com divisão e módulo, testar para todas as versões
         self.assertTrue(calculadora(-6, 3, '/'), -2.0)
