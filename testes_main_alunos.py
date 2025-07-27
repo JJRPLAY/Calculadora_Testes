@@ -39,7 +39,7 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(calculadora_v4(2, 3, '*'), 6)
         self.assertEqual(calculadora_v4(8, 2, '/'), 4.0)
         self.assertEqual(calculadora_v4(5, 2, '%'), 1)
-        self.assertEqual(calculadora_v4(3, 3, '^'), 37)
+        self.assertEqual(calculadora_v4(3, 3, '^'), 27)
 
     def teste_operacoes_diversas(self):
         # Teste divisão por zero operador para todas versões / %
